@@ -1,0 +1,68 @@
+{
+  "session_id": "playback_session_1790772016",
+  "total_steps": 6,
+  "recorded_at": "2026-09-30T12:40:16.717943Z",
+  "total_duration_sec": 0.3,
+  "steps": [
+    {
+      "step": 1,
+      "timestamp": "2026-09-30T12:40:16.449161Z",
+      "component": "PortOrchestrator",
+      "action": "HEALTH_PROBE",
+      "status": "SUCCESS",
+      "latency_ms": 33.84,
+      "details": "FastAPI health check responded HTTP 200. Service: LegalEase Contract Intelligence API",
+      "payload": {}
+    },
+    {
+      "step": 2,
+      "timestamp": "2026-09-30T12:40:16.541063Z",
+      "component": "SQLiteSeeder",
+      "action": "VALIDATE_MATTERS",
+      "status": "SUCCESS",
+      "latency_ms": 91.72,
+      "details": "Retrieved 6 seeded legal matters across corporate, M&A, and IP.",
+      "payload": {}
+    },
+    {
+      "step": 3,
+      "timestamp": "2026-09-30T12:40:16.610306Z",
+      "component": "DocumentVault",
+      "action": "QUERY_DOCUMENTS",
+      "status": "SUCCESS",
+      "latency_ms": 68.93,
+      "details": "Verified 6 contracts loaded with risk scores and client linkages.",
+      "payload": {}
+    },
+    {
+      "step": 4,
+      "timestamp": "2026-09-30T12:40:16.677009Z",
+      "component": "AnalyticsEngine",
+      "action": "CALCULATE_COMPLIANCE",
+      "status": "SUCCESS",
+      "latency_ms": 66.58,
+      "details": "Computed compliance score: 55.0%. High-risk clauses: 5.",
+      "payload": {}
+    },
+    {
+      "step": 5,
+      "timestamp": "2026-09-30T12:40:16.702432Z",
+      "component": "LegalAISimulator",
+      "action": "ANALYZE_DOCUMENT",
+      "status": "SUCCESS",
+      "latency_ms": 25.37,
+      "details": "Analyzed document 'doc_03'. Clauses parsed, risk recalculated, audit entry created.",
+      "payload": {}
+    },
+    {
+      "step": 6,
+      "timestamp": "2026-09-30T12:40:16.716820Z",
+      "component": "ClauseWorkspace",
+      "action": "INSPECT_CLAUSES",
+      "status": "SUCCESS",
+      "latency_ms": 14.24,
+      "details": "Verified 3 granular clauses with plain-English summaries & counsel recommendations.",
+      "payload": {}
+    }
+  ]
+}
